@@ -9,6 +9,7 @@
 
 
 <main class="main">
+    <div class="currency" title="Изменить валюту" id="change-currency">$</div>
     <header class="header">
         <div class="contaier">
             <div class="logo">
@@ -17,13 +18,13 @@
             <nav class="menu">
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <a href="#">Каталог</a>
+                        <a data-link="products">Каталог</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Abut us</a>
+                        <a data-link="love">Abut us</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Заказ</a>
+                        <a data-link="order">Заказ</a>
                     </li>
                 </ul>
             </nav>
@@ -45,7 +46,7 @@
                     печенья,
                     стремясь подарить вам истинное кулинарное наслаждение.</p>
                 <div class="main-action">
-                    <button class="button">Заказать</button>
+                    <button class="button" id = "main-action-button">Заказать</button>
                 </div>
             </div>
             <img src="images/cookie.png" alt="cookie" class="main-image">
@@ -55,7 +56,7 @@
     </section>
 
 
-    <section class="products">
+    <section class="products" id="products">
         <div class="contaier">
             <img src="images/line2.png" class="line2">
             <div class="common-title">
@@ -77,7 +78,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="20">
                                     20 $
                                 </div>
                                 <div class="products-item-weight">
@@ -104,7 +105,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="24">
                                     24 $
                                 </div>
                                 <div class="products-item-weight">
@@ -131,7 +132,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="18">
                                     18 $
                                 </div>
                                 <div class="products-item-weight">
@@ -158,7 +159,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="24">
                                     24 $
                                 </div>
                                 <div class="products-item-weight">
@@ -185,7 +186,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="20">
                                     20 $
                                 </div>
                                 <div class="products-item-weight">
@@ -213,7 +214,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="18">
                                     18 $
                                 </div>
                                 <div class="products-item-weight">
@@ -240,7 +241,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="36">
                                     36 $
                                 </div>
                                 <div class="products-item-weight">
@@ -267,7 +268,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="24">
                                     24 $
                                 </div>
                                 <div class="products-item-weight">
@@ -294,7 +295,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="18">
                                     18 $
                                 </div>
                                 <div class="products-item-weight">
@@ -321,7 +322,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="24">
                                     24 $
                                 </div>
                                 <div class="products-item-weight">
@@ -348,7 +349,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="20">
                                     20 $
                                 </div>
                                 <div class="products-item-weight">
@@ -376,7 +377,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-price">
+                                <div class="products-item-price" data-base-price="18">
                                     18 $
                                 </div>
                                 <div class="products-item-weight">
@@ -392,7 +393,7 @@
             </div>
         </div>
     </section>
-    <section class="love">
+    <section class="love" id = "love">
         <div class="contaier">
             <div class="common-title">
                 Пекарня с любовью
@@ -417,7 +418,7 @@
         </div>
     </section>
 
-    <section class="order">
+    <section class="order" id = "order">
         <img src="images/line3.png" class="line3">
         <div class="contaier">
 
@@ -434,10 +435,10 @@
 
                     </div>
                     <div class="order-form-input">
-                        <input type="text" placeholder="Выберите печение">
-                        <input type="text" placeholder="Ваше Имя">
-                        <input type="text" placeholder="Ваш телефон">
-                        <button class="button violet-button ">Оформить заказ</button>
+                        <input type="text" placeholder="Выберите печение" id="product">
+                        <input type="text" placeholder="Ваше Имя" id="name">
+                        <input type="text" placeholder="Ваш телефон" id="phone">
+                        <button class="button violet-button " id="oeder-action">Оформить заказ</button>
                     </div>
                 </div>
                 <div class="order-block-images ">
@@ -457,5 +458,7 @@
         </div>
     </footer>
 </main>
+
+<script src="scripts/scripts.js"></script>
 </body>
 </html>
